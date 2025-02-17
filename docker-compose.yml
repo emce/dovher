@@ -1,5 +1,5 @@
 services:
-  bloodline:
+  dovher:
     container_name: dovher
     build:
       context: .

@@ -1,0 +1,10 @@
+{
+  "TRANSLATION": {
+    "locale": "en_US",
+    "title": "dOVHer - DynDNS records updater for OVH",
+    "current_ip": "Current IP address",
+    "ip_no_changes": "All is OK",
+    "no_active_record": "No active DNS records",
+    "ip_changed": "Record updated"
+  }
+}

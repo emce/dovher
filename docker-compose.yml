@@ -1,0 +1,14 @@
+services:
+  bloodline:
+    container_name: dovher
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4444:4444"
+    networks:
+      - bridged
+      
+networks:
+    bridged:
+      external: true

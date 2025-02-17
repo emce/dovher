@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div>
+        {{ "current_ip" | translate }}<br />
+        <strong>{{ ip }}</strong>
+    </div>
+{% for host in hosts %}
+    <div>
+        <i>{{ host.subdomain }}.{{ host.domain }}</i> [{{ host.type }}] -
+        {% if host.current_ip is none %}
+            {{ "no_active_record" | translate }}
+        {% else %}
+            {% if host.current_ip == host.new_ip %}
+            {{ "ip_no_changes" | translate }} ({{ host.current_ip }})
+            {% else %}
+            {{ "ip_changed" | translate }} ({{ host.current_ip }} => {{ host.new_ip }})
+            {% endif %}
+        {% endif %}
+        {% if dev %}
+        <div><code>{{ host }}</code></div>
+        {% endif %}
+    </div>
+{% endfor %}
+</body>
+</html>

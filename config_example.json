@@ -1,0 +1,26 @@
+{
+  "DEBUG": "True",
+  "DEVELOPMENT": "True",
+  "OVH_ENDPOINT": "ovh-eu",
+  "OVH_APPLICATION_KEY": "application_key",
+  "OVH_APPLICATION_SECRET": "application_secret",
+  "OVH_CONSUMER_KEY": "consumer_key",
+  "LANGUAGE": "en",
+  "HOSTS": [
+    {
+      "type": "A",
+      "domain": "example.com",
+      "subdomain": "www"
+    },
+    {
+      "type": "A",
+      "domain": "example.com",
+      "subdomain": "test"
+    },
+    {
+      "type": "A",
+      "domain": "domain.com",
+      "subdomain": "*"
+    }
+  ]
+}

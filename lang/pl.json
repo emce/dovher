@@ -1,0 +1,10 @@
+{
+  "TRANSLATION": {
+    "locale": "pl_PL",
+    "title": "dOVHer - aktualizacja rekordów DynDNS w OVH",
+    "current_ip": "Bieżący adres IP",
+    "ip_no_changes": "Wszystko ok",
+    "no_active_record": "Brak aktywnych rekordów DNS",
+    "ip_changed": "Wpis zaktualizowany"
+  }
+}
